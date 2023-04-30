@@ -1,0 +1,201 @@
+/*GENERAL*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,9008display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Oswald','Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.rectangle {
+    border-style: solid;
+    border-color: #999999;
+    width: 80%;
+    height: 300px;
+    margin: 4% 10%;
+    position: relative;
+    alignment: center;
+}
+.rectangle2{
+    font-size: 25px;
+    border-style: solid;
+    border-color: #999999;
+    width: 80%;
+    height: 300px;
+    margin: 4% 10%;
+    position: relative;
+    padding-left: 10px;
+}
+.rectangle3{
+    font-size: 25px;
+    border-style: solid;
+    border-color: #999999;
+    width: 20%;
+    height: 50px;
+    margin: 4% 40%;
+    position: relative;
+    padding-left: 10px;
+}
+.banner {
+    color: white;
+    position: absolute;
+    background-color: red;
+    width: 40%;
+    height: 50px;
+    margin-top: 0;
+    margin-left: 30%;
+    text-align: center;
+}
+.banner p{
+    font-size: 18px;
+}
+.icon{
+    position: absolute;
+    color: white;
+    border-style: none;
+    background : red;
+    left : 45%;
+    top : 45%;
+    width : 210px;
+    height : 63px;
+    border-radius : 27px;
+    -moz-border-radius : 27px;
+    -webkit-border-radius : 27px;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-file-input
+{
+    position: absolute;
+    top: 42%;
+    left: 38%;
+}
+.custom-file-input label {
+    background-color: #3490dc;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-file-input label:hover {
+    background-color: #2779bd;
+}
+
+.custom-file-input input.inputfile {
+    display: none;
+}
+
+.custom-file-input #file-name {
+    margin-left: 5px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+/*date {*/
+/*    position: relative;*/
+/*    color: white;*/
+/*    border-style: none;*/
+/*    background : #999999;*/
+
+/*    width : 200px;*/
+/*    height : 60px;*/
+/*    border-radius : 27px;*/
+/*    -moz-border-radius : 27px;*/
+/*    -webkit-border-radius : 27px;*/
+/*    text-align: center;*/
+/*    padding-top: 15px;*/
+/*}*/
+#categorie
+{
+
+    position: relative;
+    margin-top: 25%;
+    margin-left: 5%;
+    text-align: center;
+}
+#categorie {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.send{
+    position: relative;
+    color: white;
+    border-style: none;
+    background : #999999;
+    width : 200px;
+    height : 60px;
+    border-radius : 27px;
+    -moz-border-radius : 27px;
+    -webkit-border-radius : 27px;
+    margin: 2% 15px 5% 40%;
+    text-align: center;
+    padding-top: 5px;
+}
+#date
+{
+    margin: 25% 15px 5% 35%
+}
+/*@media screen and (max-width: 1200px) {*/
+/*    #date{*/
+/*        margin: 25% 15px 5% 38%;*/
+/*    }*/
+
+/*}*/
+@media screen and (max-width: 1050px) {
+    #date{
+        margin: 30% 15px 5% 5%;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    #date{
+        margin: 30% 15px 5% 5%;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    #date{
+        margin: 35% 15px 5% 5%;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    #date{
+        margin: 38% 15px 5% 5%;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    #date{
+        margin: 40% 15px 5% 5%;
+    }
+}
+@media screen and (max-width: 650px) {
+    #date{
+        margin: 43% 15px 5% 5%;
+    }
+}
+@media screen and (max-width: 600px) {
+    #date{
+        margin: 55% 15px 5% 5%;
+    }
+    .send{
+        margin: 2% 15px 5% 33%;
+    }
+}

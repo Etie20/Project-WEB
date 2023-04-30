@@ -1,0 +1,54 @@
+/*Header*/
+
+.st0
+{
+  background : #454545;
+  position : absolute ;
+  left : 40%;
+  top : 54px;
+  width : 332px;
+  height : 63px;
+  padding: 15px 0px;
+  text-align: center;
+}
+
+.st0 h1
+{
+    font-family : Myriad Pro;
+    font-size : 22px;
+    text-transform : uppercase;
+    color : #ffff;
+}
+
+/*Mention légale*/
+
+.mention
+{
+    width : 1500px;
+    background : #FFFFFF;
+    border-style :outset ;
+    border-color : rgb(255, 13, 0);
+    border-width : 5px;
+    box-sizing: content-box;
+    position: absolute;
+    left: 10%;
+    top: 20%; 
+}
+
+.mention_element
+{
+    background : #F1F1F1;
+    position : relative ;
+    padding: 50px 50px;
+    margin: 50px 50px;
+    width : auto;
+    box-sizing: content-box;
+}
+.mention_element h1, h2, h3, h4, h5, h6
+{
+    color: #ff0000;
+}
+.mention_element a
+{
+    color: rgb(0, 0, 255);
+}

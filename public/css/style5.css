@@ -1,0 +1,1012 @@
+/* Set the box-sizing property to border-box to include padding and borders in the element's total width and height */
+/* Set margin and padding to 0 to remove any default spacing */
+/* Set the font family to Montserrat */
+/* Set scroll-behavior to smooth for smooth scrolling */
+/* Commented out font-family: 'Josefin Slab', serif; */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat;
+    scroll-behavior: smooth;
+    /* font-family: 'Josefin Slab', serif; */
+}
+
+/* Remove underline from links */
+a{
+    text-decoration: none;
+}
+
+/* Set font-weight and font-size for h1 */
+h1{
+    font-weight: normal;
+    font-size: 18px;
+}
+
+/* Set background color and image for body */
+body{
+    background-color: #646464;
+    background-image: url(../topography.svg);
+}
+
+/* Set fixed position for header container */
+header .container1{
+    position: fixed;
+    overflow: visible;
+    display: block;
+    height: 85px;
+    width: 100vw;
+    color: #ffffff;
+    margin: 0 auto;
+    top: 0px;
+    background-color: transparent;
+    z-index: 20;
+}
+
+/* Set background color, color, box-shadow for header container when scrolled */
+header .container.scroled{
+    background-color:#f1f1f1;
+    color: #454545;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Set position, size, background image for header logo */
+header .logo{
+    position: absolute;
+    top: -15px;
+    padding: 0px 0px;
+    background-image: url('../asset/Fichier 3.png');
+    background-size: cover;
+    width : 246px;
+    height : 85px;
+    background-color: transparent;
+    bottom: 600px;
+}
+
+/* Set position, list-style, display for header ul */
+header ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    left: 850px;
+    box-sizing: content-box;
+}
+
+/* Set style for dropdown menu content */
+header .dropdown-content {
+    display: flexbox;
+    position: absolute;
+    background-color: #45454538;
+    height: max-content;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px #454545;
+    z-index: 30;
+    border-radius: 0px 0px 25px 25px;
+    top: 70px;
+    left: -3.1vh;
+}
+
+/* Set style for dropdown menu links */
+header .dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 16px;
+    margin: 6px 0px;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Set style for dropdown menu links when hovered */
+header .dropdown-content a:hover {
+    background-color: #454545;
+    border: 3px solid #fafafa ;
+    border-radius: 30px;
+}
+
+/* Set style for header nav-item plus */
+header .nav-item.plus{
+    box-sizing:content-box;
+    width: inherit;
+    background-color: transparent;
+    color: transparent;
+    overflow: hidden;
+}
+
+/* Set style for header nav-item plus when hovered */
+header .nav-item.plus:hover{
+    overflow: visible;
+    background-color: #4545454e;
+    box-shadow: 0px 8px 16px 0px #454545;
+    height: 195px;
+}
+
+/* Set style for container1 when header nav-item plus is hovered */
+header .nav-item.plus:hover .container1{
+    overflow: visible;
+}
+
+/* Set style for notification icon */
+header .container .notification {
+    background : #f1f1f1;
+    position : absolute ;
+    left : 1168px;
+    top : 13px;
+    width : 60px;
+    height : 61px;
+    border-radius : 30px;
+}
+/* This block of styles applies to the list items within the header */
+header ul li{
+    margin: 0px 0px;
+    padding: 24px 30px;
+    position: relative;
+    align-items: center;
+}
+
+/* This block of styles applies to the navigation items within the header */
+header ul .nav-item{
+    right: 300px;
+    margin: 20px 0px;
+    box-sizing: content-box;
+    height: 41px;
+    background-color: transparent;
+    position : relative ;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+/* This block of styles applies to the navigation items within the header when they are hovered over */
+header ul .nav-item:hover{
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+/* This block of styles applies to the currently active navigation item within the header */
+header ul .nav-item.active{
+    border-color: #ffffff;
+    background-color: transparent;
+    transition:0.3s;
+}
+
+/* This block of styles applies to the links within the navigation items */
+header ul .nav-item a{
+    font-family : Montserrat;
+    font-size : 16px;
+    color: #ffffff;
+    text-transform : uppercase;
+    position: relative;
+    bottom: 15px;
+}
+
+/* This block of styles applies to the notification icon within the header */
+header .notif{
+    height: 60px;
+    position: fixed;
+    width: 60px;
+    border-radius: 30px;
+    background-color: transparent;
+    z-index: 32;
+    left: 93vw;
+    top: 10px;
+    margin-right: 20px;
+}
+
+/* This block of styles applies to the circular part of the notification icon */
+header .notif .rond{
+    background-color: #29ABE2;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    border-radius: 10px;
+    top: 5px;
+    bottom: 5px;
+}
+
+/* This block of styles applies to the link within the notification icon */
+header .notif a{
+    height: 10px;
+    width: 10px;
+}
+
+/* This block of styles applies to the SVG element */
+header .notif svg{
+    height: 65px;
+    width: 65px;
+    top: -1px;
+    left: -2px;
+}
+
+/* This block of styles applies to all SVG elements on the page */
+svg{
+    width: 40px;
+    height: 40px;
+    position: relative ;
+    color: white;
+    background-color:transparent;
+    fill: #ffffff;
+    stroke: #45454563;
+    stroke-width:1.5px ;
+    top: 15%;
+    left: 16%;
+}
+
+/* This block of styles applies to all sections on the page */
+.sec{
+    position: relative;
+    padding: 50px;
+}
+
+/* This block of styles applies to the title within a section */
+.sec .title{
+    padding: 25px;
+    margin-bottom: 45px;
+}
+
+/* This block of styles applies to the main heading within a section */
+.sec .title h1{
+    color: white;
+    font-weight: lighter;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    font-size: 150px;
+    font-family: 'Josefin Slab', serif;
+    padding: 20px 130px 5PX;
+}
+
+/* This block of styles applies to the first section of the page */
+.sec.s1{
+    background-color: aqua;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 100%;
+    background-image: url(../asset/FabLab2.jpg);
+    background-size: cover;
+    background-position: 5% 45% ;
+}
+
+/* This block of styles applies to the container within the first section */
+.container.s1{
+    height: 90vh;
+    background-color: #45454555;
+    margin-top: 10vh;
+    color: #fff;
+}
+
+/* This block of styles applies to the main heading within the container of the first section */
+.container.s1 h1{
+    left: 12vh;
+    top: 12vh;
+    font-family: 'Josefin Slab', serif;
+    position: relative;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 64px;
+    padding: 35px 10px ;
+}
+
+/* This block of styles applies to the secondary heading within the container of the first section */
+.container.s1 h2{
+    font-weight: 250;
+    font-size: 60px;
+    padding: 10px;
+    left: 12vh;
+    top: 12vh;
+    padding: 100px 150px ;
+}
+
+/* This block of styles applies to the "actualite" element within a section */
+#actualite{
+    display: inline-flex;
+    margin: 0px ;
+    padding: 0px;
+    position: absolute;
+    left: -20px;
+    left: 0px;
+    background: rgb(53,195,34);
+    background: rgb(34,191,195);
+    background-image: linear-gradient(to right, #8b2dfd, #22b7c3   );
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* This block of styles applies to the second section of the page */
+.sec.s2 h1{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* This block of styles applies to the main heading within the second section */
+.sec.s2 h1{
+   font-size: 150px;
+}
+
+/* This block of styles applies to the secondary heading within the second section */
+.sec.s2 h2{
+    font-size: 65px;
+    color: #fff;
+    font-weight: 250;
+    margin-bottom: 45px;
+    padding: 45px 0px 45px 45px;
+}
+
+/* This block of styles applies to the paragraph text within the second section */
+.sec.s2 p{
+    font-family: Montserrat;
+    font-size: 21px;
+    color: #fff;
+    padding: 15px 60px;
+}
+
+/* This block of styles applies to the image and text container within the second section */
+.sec.s2 .img_txt{
+    transform-origin: right;
+    justify-content: left;
+    height: 75vh;
+    width: 75vw;
+    background-color: white;
+    background-image: url(../asset/culturel.jpg);
+    background-size:cover;
+    background-position: right -60px bottom 0px;
+    background-repeat: no-repeat;
+}
+
+/* This block of styles applies to the third section of the page */
+.sec.s3{
+    background-color: #45454556;
+    top: 600px;
+}
+
+
+ /* caroussel */
+
+ .sec .caroussel{
+
+
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    bottom: 0px;
+    top: 35px;
+
+}
+
+.sec .caroussel .art {
+
+    display: flex;
+        flex-wrap: nowrap;
+        height: 648px;
+        margin: 50px 20px;
+        /* background-color: #8DEA7D; */
+        transition: transform 0.3s ease-in-out;
+
+}
+
+.article .image:hover{
+
+    transition: 0.6s;
+    box-shadow: 10px 10px 0px #8DEA7D;
+    transform: translateX(-10px);
+    transform: translatey(-10px);
+
+
+}
+
+.sec .article {
+
+    position: relative;
+
+    display: inline-block;
+    flex: 0 0 16%;
+    max-width: 80%;
+    margin: 20px 50px;
+    padding: 0px;
+    height: 448px;
+
+    background-color: #454545;
+
+
+
+
+}
+
+.sec .article .lay1{
+
+    position: relative;
+    box-sizing: border-box;
+    height: 191px;
+    background-color: #FFE6C7;
+    max-width: 100%;
+
+}
+
+.article h4{
+
+    position: relative;
+    font-weight: regular;
+    font-size: 18px;
+    left: 20px;
+    top: 150px;
+    color: #FFFFFF;
+}
+
+.article h5{
+
+    position: relative;
+    font-weight: lighter;
+    font-size: 18px;
+    left: 20px;
+    color: #FFFFFF;
+    top: 160px;
+
+
+}
+
+
+.article .image{
+
+    position: relative;
+    width : 315px;
+    height : 327px;
+    background-color : #29ABE2;
+    right: 48px;
+    bottom: 265px;
+    transition: 0.6s;
+}
+
+.article .image:hover{
+
+    transition: 0.6s;
+    box-shadow: 10px 10px 0px #B67EE8;
+    transform: translateX(-10px);
+    transform: translatey(-10px);
+
+
+}
+.carousel__controls {
+    align-content: center;
+    position: relative;
+    bottom: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+.carousel__controls button{
+
+
+    height: 15vh;
+    width: 5vw;
+    background-color: #FFFFFF;
+    color: #454545;
+    font-size: 50px;
+    padding: 0px 0px 10px 0px;
+    border: transparent;
+    box-shadow: 0 0 10px ;
+
+
+}
+
+.carousel__controls button:hover{
+
+cursor: pointer;
+font-size: 70px;
+height: 16vh;
+width: 6vw;
+
+}
+
+
+.sec.s2 .title{
+
+
+    background-color: #4545453f;
+ }
+
+ .sec.s4 .title{
+
+
+    background-color: #4545453f;
+ }
+
+
+
+.sec.s4{
+
+    background-color: transparent;
+    display: block;
+    position: relative;
+    top: 600px;
+
+
+
+}
+
+.membre{
+
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,250px);
+    justify-content: center;
+    grid-gap: 50px;
+    position: relative;
+    margin-top: 80px;
+    height: 500px;
+    list-style: none;
+    background-size: cover;
+
+
+}
+
+.members h2{
+
+    font-family: 'Josefin Slab', serif;
+    font-weight: 250;
+    font-size: 1.6em;
+    padding-left: 10px;
+    text-align: bottom;
+    top: 85px;
+    position: static;
+    color: #fff;
+
+}
+.members h1{
+
+    font-weight: 500;
+    font-size: 1.6em;
+    padding-left: 10px;
+    position: relative;
+    top: 0px;
+    color: #fff;
+
+
+
+}
+
+.members .text{
+
+
+    background-color: #45454582;
+    top: 0PX;
+    position: absolute;
+    width: 19%;
+
+
+}
+
+ .members img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+.members.m1{
+
+    background-color: #EB2D39;
+
+
+}
+ .members.m2{
+
+    background-color: #ebbc2d;
+
+
+}
+ .members.m3{
+
+    background-color: #2d3aeb;
+
+
+}
+
+ .members.m4{
+
+    background-color: #2deb49;
+    display: block;
+
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Remove list-style from ul */
+  ul {
+    list-style: none;
+  }
+
+  /* Footer section styling */
+  .footer {
+    background-color: black;
+    padding: 40px 0;
+    display: block;
+    position: relative;
+    margin-top: 200px;
+    bottom:100%;
+
+  }
+
+  /* Footer column styling */
+  .footer-col {
+    background-color: black;
+    width: 20%;
+    padding: 0 25px;
+
+  }
+
+  /* Styling for h4 in footer column */
+  .footer-col h4 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  /* Styling for images in footer column */
+  .footer-col img {
+    font-size: 18px;
+    margin-left: -25px;
+  }
+
+  /* Styling for h4 before pseudo-element */
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+
+  /* Styling for list items in footer column */
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+
+  /* Styling for links in list items in footer column*/
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  /* Styling for spans in list items in footer column */
+  .footer-col ul li span{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:white;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  /* Hover styling for links in list items in footer column */
+  .footer-col ul li a:hover{
+    color:white;
+    padding-left: 8px;
+  }
+
+  /* Hover styling for spans in list items in footer column */
+  .footer-col ul li span:hover{
+    color:white;
+    padding-left: 8px;
+  }
+
+  /* Media query for smaller screens */
+  @media(max-width:767px){
+    .footer-col {
+      width: 50%;
+      margin-bottom: 30px;
+     }
+  }
+
+  /* Media query for even smaller screens */
+  @media(max-width:574px){
+    .footer-col {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+    /* Styles pour les mises en page responsives */
+    @media screen and (max-width: 1253px) {
+        header {
+            font-size: 1.5em;
+        }
+
+        .members.m3 .text{
+
+
+            background-color: #45454582;
+            top: -90px;
+            position: relative;
+            width: 250px;
+
+
+
+        }
+
+    }
+    @media screen and (max-width: 1120px) {
+        header {
+            font-size: 1.5em;
+        }
+
+        .nav-item a{
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        sec {
+            padding: 20px;
+        }
+
+        sec h1 {
+            font-size: 1.5em;
+        }
+
+        sec p {
+            font-size: 1em;
+        }
+        .sec .title h1{
+
+            padding: 20px 10px 5PX;
+            font-size: 100PX;
+
+        }
+        .container.s1{
+
+            width: 100%;
+
+        }
+        .container.s1 h1{
+            left: 8vh;
+
+            padding: 30px 10px ;
+        }
+        .sec .caroussel .art {
+
+
+                margin: 20px 20px;
+                /* background-color: #8DEA7D; */
+                transition: transform 0.3s ease-in-out;
+
+        }
+
+        .members.m4 .text{
+
+
+            background-color: #45454582;
+            top: -100%;
+            position: relative;
+            width: 250px;
+
+
+
+        }
+
+        .members.m3 .text{
+
+
+            background-color: #45454582;
+            top: -100%;
+            position: relative;
+            width: 250px;
+
+
+
+        }
+        .members.m2 .text{
+
+
+            background-color: #45454582;
+            top: -100%;
+            position: relative;
+            width: 250px;
+
+
+
+        }
+        .members.m1 .text{
+
+
+            background-color: #45454582;
+            top: -100%;
+            position: relative;
+            width: 250px;
+
+
+
+        }
+        .members .text{
+
+
+            background-color: #45454582;
+            top: 0PX;
+            position: absolute;
+            width: 30%;
+
+
+        }
+        header .notif {
+            left: auto;
+            right: 0px;
+          }
+          header ul{
+            position: relative;
+            list-style: none;
+            display: flex;
+            left: 450px;
+            box-sizing: content-box;
+            margin: 20px;
+        }
+        header .logo{
+            margin: 15px;
+        }
+
+        .footer {
+            background-color: black;
+            padding: 40px 0;
+            display: block;
+            position: relative;
+            margin-top: 500px;
+            bottom:100%;
+
+          }
+
+
+
+    }
+
+
+      /* For screens smaller than or equal to 768px */
+@media (max-width: 768px) {
+    header{
+        display: none;
+    }
+    header .container1 {
+      height: 60px;
+    }
+    .membre{
+
+        top:150px;
+    }
+
+    .members{
+
+        height: 700px;
+    }
+
+    header ul {
+      left: 0;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    header ul .nav-item {
+      margin: 0;
+      width: 50%;
+    }
+
+    header ul .nav-item.active {
+      border-color: transparent;
+      background-color: #4545454e;
+    }
+
+    header ul .nav-item:hover {
+      border: none;
+    }
+
+    header .notif {
+      left: auto;
+      right: 10px;
+    }
+
+    .sec {
+        padding: 25px;
+      }
+
+      .sec .title h1 {
+        font-size: 80px;
+        padding: 20px;
+      }
+
+      .container.s1 {
+        height: auto;
+        margin-top: 5vh;
+      }
+
+      .container.s1 h1 {
+        font-size: 36px;
+        padding: 20px;
+      }
+
+      .container.s1 h2 {
+        font-size: 24px;
+        padding: 20px;
+      }
+
+      #actualite {
+        left: -10px;
+        padding: 10px;
+      }
+      .footer {
+        background-color: black;
+        padding: 40px 0;
+        display: block;
+        position: relative;
+        margin-top: 1400px;
+        bottom:100%;
+
+      }
+  }
+
+
+
+
+
+
+    @media screen and (max-width: 480px) {
+        header {
+            font-size: 1.2em;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        section {
+            padding: 10px;
+        }
+
+        section h1 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 0.8em;
+            line-height: 1.2;
+        }
+        section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer{
+
+            top: 1400px;
+        }
+    }
+
